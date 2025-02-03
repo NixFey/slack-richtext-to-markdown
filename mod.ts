@@ -49,7 +49,7 @@ function elementToMarkdown(el: RichTextElement): string {
         return backtickSurround(`:${emoji.name}:`);
       }
     case "link":
-      return styleToMarkdown(`[${el.text}](${el.url})`, el.style);
+      return styleToMarkdown(`[${el.text ?? el.url}](${el.url})`, el.style);
     case "team":
       return backtickSurround(el.team_id);
     case "text":
