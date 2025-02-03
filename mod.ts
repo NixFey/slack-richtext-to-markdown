@@ -1,6 +1,6 @@
-import type { RichTextBlock, RichTextBlockElement, RichTextList, RichTextElement, RichTextStyleable, RichTextEmoji, RichTextUserMention, RichTextUsergroupMention } from "npm:@slack/types";
+import type { RichTextBlock, RichTextBlockElement, RichTextList, RichTextElement, RichTextStyleable, RichTextEmoji, RichTextUserMention, RichTextUsergroupMention } from "npm:@slack/types@^2.0.0";
 
-function backtickSurround(input: string) {
+function backtickSurround(input: string): string {
   return "`" + input + "`";
 }
 
@@ -69,7 +69,7 @@ function blockToMarkdown(input: RichTextBlockElement): string {
   }
 }
 
-export function richtextToMarkdown(input: RichTextBlock) {
+export function richtextToMarkdown(input: RichTextBlock): string {
   if (input.type !== "rich_text") throw new Error("Got unexpected input converting rich text to markdown");
 
   return input.elements.map(blk => (blk.type === "rich_text_list" && (blk.indent ?? 0) > 0 ? "" : "\n") + blockToMarkdown(blk)).join("\n").trim();
