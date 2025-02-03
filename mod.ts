@@ -1,3 +1,17 @@
+/**
+ * A helper library to convert Slack's proprietary RichText format to normal markdown.
+ *
+ * @example
+ * ```ts
+ * import richtextToMarkdown from "@nixfey/slack-richtext-to-markdown";
+ *
+ * function parseSlackText() {
+ *     console.log(richtextToMarkdown({type: "rich_text", elements: []}));
+ * }
+ * ```
+ * @module
+ */
+
 import type { RichTextBlock, RichTextBlockElement, RichTextList, RichTextElement, RichTextStyleable, RichTextEmoji, RichTextUserMention, RichTextUsergroupMention } from "npm:@slack/types@^2.0.0";
 
 function backtickSurround(input: string): string {
