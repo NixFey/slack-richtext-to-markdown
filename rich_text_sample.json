@@ -1,0 +1,85 @@
+{
+    "expected_output": "`:office:` ** Company business**\n\n- Fill out your W-2\n- Enroll in  [benefits](https://salesforcebenefits.com)\n- Fill out your Slack profile, including:\n  - Time zone\n  - Pronouns",
+    "type": "rich_text",
+    "elements": [
+        {
+            "type": "rich_text_section",
+            "elements": [
+                {
+                    "type": "emoji",
+                    "name": "office"
+                },
+                {
+                    "type": "text",
+                    "text": " Company business",
+                    "style": {
+                        "bold": true
+                    }
+                }
+            ]
+        },
+        {
+            "type": "rich_text_list",
+            "style": "bullet",
+            "elements": [
+                {
+                    "type": "rich_text_section",
+                    "elements": [
+                        {
+                            "type": "text",
+                            "text": "Fill out your W-2"
+                        }
+                    ]
+                },
+                {
+                    "type": "rich_text_section",
+                    "elements": [
+                        {
+                            "type": "text",
+                            "text": "Enroll in "
+                        },
+                        {
+                            "type": "link",
+                            "text": "benefits",
+                            "url": "https://salesforcebenefits.com"
+                        }
+                    ]
+                },
+                {
+                    "type": "rich_text_section",
+                    "elements": [
+                        {
+                            "type": "text",
+                            "text": "Fill out your Slack profile, including:"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "rich_text_list",
+            "style": "ordered",
+            "indent": 1,
+            "elements": [
+                {
+                    "type": "rich_text_section",
+                    "elements": [
+                        {
+                            "type": "text",
+                            "text": "Time zone"
+                        }
+                    ]
+                },
+                {
+                    "type": "rich_text_section",
+                    "elements": [
+                        {
+                            "type": "text",
+                            "text": "Pronouns"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
