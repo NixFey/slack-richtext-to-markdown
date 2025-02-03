@@ -1,7 +1,7 @@
 import { assertEquals } from "@std/assert";
-import { richtextToMarkdown } from "./main.ts";
+import { richtextToMarkdown } from "./mod.ts";
 import input from "./rich_text_sample.json" with {type: "json"};
-import { RichTextBlock } from "npm:@slack/types";
+import type { RichTextBlock } from "npm:@slack/types";
 
 Deno.test(function overallTest() {
   const expected = (input as RichTextBlock & {expected_output: string}).expected_output;

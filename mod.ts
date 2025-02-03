@@ -1,4 +1,4 @@
-import { RichTextBlock, RichTextBlockElement, RichTextList, RichTextElement, RichTextStyleable, RichTextEmoji, RichTextUserMention, RichTextUsergroupMention } from "npm:@slack/types";
+import type { RichTextBlock, RichTextBlockElement, RichTextList, RichTextElement, RichTextStyleable, RichTextEmoji, RichTextUserMention, RichTextUsergroupMention } from "npm:@slack/types";
 
 function backtickSurround(input: string) {
   return "`" + input + "`";
