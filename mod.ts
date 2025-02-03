@@ -45,7 +45,7 @@ function elementToMarkdown(el: RichTextElement): string {
     case "emoji":
       {
         const emoji = el as RichTextEmoji;
-        if (emoji.unicode) return emoji.unicode;
+        if (emoji.unicode) return String.fromCodePoint(parseInt(emoji.unicode, 16));
         return backtickSurround(`:${emoji.name}:`);
       }
     case "link":

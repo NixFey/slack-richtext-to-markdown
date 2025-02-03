@@ -1,10 +1,15 @@
 {
-    "expected_output": "`:office:` ** Company business**\n\n- Fill out your W-2\n- Enroll in  [benefits](https://salesforcebenefits.com)\n- Fill out your Slack profile, including:\n  - Time zone\n  - Pronouns",
+    "expected_output": "😀 `:office:` ** Company business**\n\n- Fill out your W-2\n- Enroll in  [benefits](https://salesforcebenefits.com)\n- Fill out your Slack profile, including:\n  - Time zone\n  - Pronouns",
     "type": "rich_text",
     "elements": [
         {
             "type": "rich_text_section",
             "elements": [
+                {
+                    "type": "emoji",
+                    "name": "grinning",
+                    "unicode": "1f600"
+                },
                 {
                     "type": "emoji",
                     "name": "office"
